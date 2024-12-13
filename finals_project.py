@@ -60,7 +60,13 @@ def activity7():
             A[v] = 0
             print(f"the account was already created for {v}")
             
-    
+    # def acc_main(): 
+    #     while True:
+    #         print("type new for creation of account")
+    #         x = input("enter a command:")
+    #         if x == "new":
+    #             accs()           
+    # acc_main()
 
     
 def activity8():
