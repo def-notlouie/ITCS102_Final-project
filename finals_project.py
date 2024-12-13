@@ -1,7 +1,16 @@
 def activity1():
-    pass
+    print("Hello world")
+    print()
+    print("**print()** is a built in function in python, just insert quotation marks inside the the parentheses("")")
+
+
 def activity2():
-    pass
+    x = input("enter your name: ")
+    y = input("enter your age : ")
+    z = input("enter your hobby : ")
+    yy = input("enter your goals : ")
+    print(f"hello my name is {x}, and I'm {y} years old. my favorite hobby is {z}, and the goal i root the most is {yy}")
+
 def activity3():
     x = eval(input("enter a number: "))
     y = eval(input("enter a number: "))
@@ -48,10 +57,10 @@ def activity6():
         for c in range (6, x, -1):
             print("*", end=" ")
         print()
-def activity7():
+def activity7(accs):
     A = {}
 
-    def accs():
+    def accs(v):
         v = input("enter user:")
         if v in A:
             print("this account is already exist")
@@ -70,6 +79,8 @@ def activity7():
 
     
 def activity8():
+    x = int(input("enter a temperature"))
+
     pass
 def activity9():
     pass
@@ -105,13 +116,17 @@ def activity24():
     pass
 def activity25():
     pass
+def bato_bato_pick():
+    x = input("enter a guess: ")
+    
 
 def main():
     while True:
         coms = input("Enter an instruction: ")
         if coms.lower() == "exit":
-            break
             print("program terminated")
+            break
+            
         elif coms.lower() == "cat1":
             activity1()
             continue
