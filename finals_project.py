@@ -1,15 +1,15 @@
 user_data = {}
-
+accounts = {}
 #activity1
-def hello_world(x): #print
+def hello_world(y): #print
     print()
-    print(f"hello {x}, do you know that printing 'hello world' in python is very common in programming")
+    print(f"hello {y}, do you know that printing 'hello world' in python is very common in programming")
     print("Hello world")
     print()
     print("**print()** is a built in function in python, just insert quotation marks inside the the parentheses("")")
 
 
-def activity2(x): #variable concatenation
+def activity2(a): #variable concatenation
     
     y = input("enter your age : ")
     z = input("enter your hobby : ")
@@ -74,7 +74,7 @@ def activity3(): # variable - concatenation
     I have developed skills in {skills}. Developing these skills will help me navigate complex situations, enhance my professional growth, and contribute more effectively to achieving my goals.
     """)
 
-def activity4():
+def activity4(): #arithmetic
     A = eval(input("Enter a number: "))
     B = eval(input("Enter another number: "))
 
@@ -115,7 +115,7 @@ def activity6():
 
     
 
-def activity7():
+def activity7(): 
     AA =input("What's your name, Miner?: ")
     print("\n")
     A = 0
@@ -154,7 +154,7 @@ def login():
     else:
         print("Invalid username or password.")
 
-def activity9():
+def activity9(): #comparison/logical
     A = eval(input("Enter Age ---------->"))
 
     if A >= 1 and A<= 7:
@@ -174,7 +174,7 @@ def activity9():
     elif A >= 100:
         print("Ancient")
     
-def activity10():
+def activity10(): #if else
     name = input("Enter Your Name: ")
 
     isStudent = input("Are you a student of DLL(Yes/No): ")
@@ -355,10 +355,11 @@ def activity23(number): #modules
 print(f"THe factorial of 13 is {activity23(13)}")
 
 
-def activity24():
+def activity24(): #Dictionary
+    x = {"past":"Yesterday","present":"Today","future":"Tommorow"}
+    print(x["past"])
 
-    pass
-def activity25():
+def activity25(): #list
 
     courses = ["BSIT", "BSA", "BSAIS", "BTVTED", "BSSW", "BSPA", "Delete w/o index", "Delete with index"]
 
@@ -482,7 +483,7 @@ def code_challenge6():  #comparison operators/if-elif-else structure
     else :
         print("Unfortunately You din't meet the requirements",n," better luck nextime!")
 
-def code_challenge7():
+def code_challenge7(): #arithmetic/if else/ assignment/comparison
     # Grocery Purchase Program
 
     A = input("DID YOU BUY A GROCERY GOOD/s (yes/no)? ").strip().lower()
@@ -547,9 +548,9 @@ def code_challenge8():
         else:
             even+=num
 
-print(f"\nThe sum of all given numbers is {sum}")
-print(f"\nThe even of all given numbers is {even}")
-print(f"\nThe odd of all given numbers is {odd}")
+    print(f"\nThe sum of all given numbers is {sum}")
+    print(f"\nThe even of all given numbers is {even}")
+    print(f"\nThe odd of all given numbers is {odd}")
 
 
 def code_challenge9(): #for loop
@@ -637,13 +638,15 @@ def code_challenge14():  #While Loop
     a = 0
     while x == True:
         number = eval(input("Enter a number--->  "))
-        if number == 0:
+        if number == "0":
             print("Program Terminated")
             print(f"The total of the number you enter is {a}")
             break
-        else:
+        elif number != "0":
             a += number
             continue
+        else:
+            break
 
 def code_challenge15(): #Hybrid Loop
     import os
@@ -672,7 +675,7 @@ def code_challenge15(): #Hybrid Loop
             continue
 
 
-##code_challenge16():
+##code_challenge16(): function
 def denomination(amount):
     print("\nDenomination Breakdown:")
     A = amount // 1000
@@ -712,7 +715,7 @@ def denomination(amount):
     print("1------", I)
 
 
-accounts = {}
+
 
 def account():
     x = input("Enter an account name: ")
@@ -803,80 +806,583 @@ def main():
         if coms.lower() == "exit" or coms == "15":
             print("program terminated")
             break
-        else:
+        elif coms.lower() != "exit" or coms != "15":
             # 1. Introduction to python
-            if coms.lower() == "1":
-                x = input("what's you're name?------>")
-                hello_world(x)
-                continue
-            elif coms.lower() == "cat2":
-                x = input("enter your name: ")
-                activity2(x)
-                continue
-            elif coms.lower() == "cat3":
-                activity3()
-                continue
-            elif coms.lower() == "cat4":
-                activity4(coms)
-                continue
-            elif coms.lower() == "cat5":
-                do
-                activity5()
-                print("program executed")
-                continue
-            elif coms.lower() == "cat6":
-                activity6()
-                print("program executed")
-                continue
+            if coms.lower() == "1": # first done!
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.1 Printing/Concatenation                    |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND (1-6 ('1'))                                            |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity1.py              ||       4. Code_Challenge1.py       ||")
+                    print("||2. Activity2.py              ||       5. Code_Challenge2.py       ||")
+                    print("||3. Activity4.py              ||       6. Code_Challenge4.py       ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            y = input("what's your name? : ")
+                            hello_world(y)
+                            continue
+                        elif command == "2":
+                            a = input("what's your name? : ")
+                            activity2(a)
+                            continue
+                        elif command == "3":
+                            activity4()
+                            continue
+                        elif command == "4":
+                            code_challenge1()
+                            continue
+                        elif command == "5":
+                            code_challenge2()
+                            continue
+                        elif command == "6":
+                            code_challenge4()
+                            continue
+                    else:
+                        print("Invalid Command")        
+
+                
+            elif coms.lower() == "2": # second done!!
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.2 DATA TYPES OR VARIABLE                    |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1 ('1'))                                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity3.py              ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity3()
+                            continue
+                    else:
+                        print("Invalid Command")    
+
+            elif coms.lower() == "3": #third done!
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.3 ARITHMETIC OPERATORS                      |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1 ('1'))                                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity4.py              ||       3.Code_Challenge3.py        ||")
+                    print("||2. Activity5.py              ||       4.Code_Challenge4.py        ||")
+                    print("||                             ||       5.Code_Challenge5.py        ||")
+                    print("||                             ||       6.Code_Challenge7.py        ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity4
+                            continue
+                        elif command == "2":
+                            activity5()
+                            continue
+                        elif command == "3":
+                            code_challenge3()
+                            continue
+                        elif command == "4":
+                            code_challenge4()
+                            continue
+                        elif command == "5":
+                            name = input("What's your name? -------->")
+                            P = float(input("The amount of your deposit----->"))
+                            code_challenge5(P)
+                            continue
+                        elif command == "6":
+                            code_challenge7()
+                            continue
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")
+
+            elif coms.lower() == "4":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.4 ASSIGNMENT OPERATORS                      |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-2 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity6.py              ||       2.Code_Challenge7.py        ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity6()
+                            continue
+                        elif command == "2":
+                            code_challenge7()
+                            continue
+                    else:
+                        print("Invalid Command")
+
+            elif coms.lower() == "5": #fifth done!
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.5 COMPARISON OPERATORS                      |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-4 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity7.py              ||       3. Code_Challenge6.py       ||")
+                    print("||2. Activity9.py              ||       4. Code_Challenge7.py       ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity7()
+                            continue
+                        elif command == "2":
+                            activity9()
+                            continue
+                        elif command == "3":
+                            code_challenge6()
+                            continue
+                        elif command == "4":
+                            code_challenge7()
+                            continue
+                    else:
+                        print("Invalid Command")
+                
+            elif coms.lower() == "6":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.6 LOGICAL OPERATORS                         |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-2 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity9.py              ||                                   ||")
+                    print("||2. Activity10.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity9()
+                            continue
+                        elif command == "2":
+                            activity10()
+                            continue
+                    else:
+                        print("Invalid Command")
             
             
             # 2.Control Structures
-            elif coms.lower() == "bank":
-                activity7()
-                print("programm terminated")
-            elif coms.lower() == "cat8":
-                activity8()
-                def mainpass():
-                    while True:
-                        print("\n1. Create User")
-                        print("2. Login")
-                        print("3. back to main dash board")
-                        choice = input("Choose an option: ")
-                        if choice == "1":
-                            create_user()
-                        elif choice == "2":
-                            login()
-                        elif choice == "3":
-                            print(f"Goodbye!")
-                            break
-                        else:
-                            print("Invalid choice. Please try again.")
-                mainpass()
+            elif coms.lower() == "7":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                     No.7 IF/ELIF/ELSE STRUCTURE                    |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-5 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity7.py              ||       4. Code_Challenge6.py       ||")
+                    print("||2. Activity9.py              ||       5. Code_Challenge7.py       ||")
+                    print("||3. Activity10.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity7()
+                            continue
+                        elif command == "2":
+                            activity9()
+                            continue
+                        elif command == "3":
+                            activity10()
+                            continue
+                        elif command == "4":
+                            code_challenge6()
+                            continue
+                        elif command == "4":
+                            code_challenge7()
+                            continue
+                    else:
+                        print("Invalid Command")
+
+            elif coms.lower() == "8":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                          No.8 FOR LOOP                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-14 ('1'))                                          |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity11.py             ||       9. Code_Challenge8.py       ||")
+                    print("||2. Activity12.py             ||       10. Code_Challenge9.py      ||")
+                    print("||3. Activity13.py             ||       11. Code_Challenge10.py     ||")
+                    print("||4. Activity14.py             ||       12. Code_Challenge11.py     ||")
+                    print("||5. Activity15.py             ||       13. Code_Challenge12.py     ||")
+                    print("||6. Activity16.py             ||       14. Code_Challenge13.py     ||")
+                    print("||7. Activity17.py             ||                                   ||")
+                    print("||8. Activity18.py             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity11()
+                            continue
+                        elif command == "2":
+                            activity12()
+                            continue
+                        elif command == "3":
+                            activity13()
+                            continue
+                        elif command == "4":
+                            activity14()
+                            continue
+                        elif command == "5":
+                            activity15()
+                            continue
+                        elif command == "6":
+                            activity16()
+                            continue
+                        elif command == "7":
+                            activity17()
+                            continue
+                        elif command == "8":
+                            activity18()
+                            continue
+                        elif command == "9":
+                            code_challenge8()
+                            continue
+                        elif command == "10":
+                            code_challenge9()
+                            continue
+                        elif command == "11":
+                            code_challenge10()
+                            continue
+                        elif command == "12":
+                            code_challenge11()
+                            continue
+                        elif command == "13":
+                            code_challenge12()
+                            continue
+                        elif command == "14":
+                            code_challenge13()
+                            continue
+                    else:
+                        print("Invalid Command")
                 
-            elif coms.lower() == "cat9":
-                activity9()
-                continue
-            elif coms.lower() == "cat10":
-                activity10()
-                continue
+            elif coms.lower() == "9":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                        No.9 WHILE LOOP                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-2 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity19.py             ||       2. Code_Challenge14.py      ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity19()
+                            continue
+                        elif command == "2":
+                            code_challenge14()
+                            continue
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")
+            elif coms.lower() == "10":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                        No.10 HYBRID LOOP                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1 ('1'))                                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity20.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity20()
+                            continue
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")
+
             #3. Functions
-            elif coms.lower() == "cat11":
-                code_challenge1()
-                continue
-
-            
-            elif coms.lower() == "3":
-                name = input("What's your name? -------->")
-                P = float(input("The amount of your deposit----->"))
-                code_challenge5(P)
-                continue
-
+            elif coms.lower() == "11":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                        No.11 FUNCTIONS                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1-2 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity8.py              ||       3.Code_Challenge16.py       ||")
+                    print("||2. Activity21.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                             while True:
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|                      USER NAME AND PASSWORD                        |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|    * COMMAND (1-2)                                                 |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("| 1. Create User                                                     |")
+                                print("| 2. Login                                                           |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("| 0. back to main dash board                                         |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                choice = input("Choose an option: ")
+                                if choice == "0":
+                                    break
+                                elif choice != "0":
+                                    
+                                    if choice == "1":
+                                        create_user()
+                                        continue
+                                    elif choice == "2":
+                                        login()
+                                        continue                                     
+                                else:
+                                    print("Invalid choice. Please try again.")
+                        elif command == "2":
+                            activity21
+                            continue
+                        elif command == "3":
+                            while True:
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|                    BANK ACCOUNT USER DASHBOARD                     |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|    * COMMAND (1-3)                                                 |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("| 1. Create User                                                     |")
+                                print("| 2. Deposit                                                         |")
+                                print("| 3. Withdraw                                                        |")
+                                print("| 4. Check                                                           |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("| 0. back to main dash board                                         |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                choice = input("Choose an option: ")
+                                if choice == "0":
+                                    break
+                                elif choice != "0":
+                                    
+                                    if choice == "1":
+                                        create_user()
+                                        continue
+                                    elif choice == "2":
+                                        deposit()
+                                        continue
+                                    elif choice == "3":
+                                        withdrawal()
+                                        continue 
+                                    elif choice == "4":
+                                        check_balance()
+                                        continue                                          
+                                else:
+                                    print("Invalid choice. Please try again.")
+                            
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")
 
             ##DATA STRUCTURES
             elif coms.lower() == "12":
-                pass
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                        No.12 LIST                                  |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1 ('1'))                                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity25.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity25()
+                            continue
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")
             elif coms.lower() == "13":
-                pass
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                        No.13 DICTIONARY                            |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1 ('1'))                                             |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity24.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity24()
+                            continue
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")
+
+                
             elif coms.lower() == "14":
-                pass       
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                        No.14 MODULES                               |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+                    print("|   * COMMAND ( 1 ('1'))                                           |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
+                    print("||1. Activity23.py             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("||                             ||                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||0. to back/exit                                                   ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        break
+                    elif command != "0" or command != "exit":
+                        if command == "1":
+                            activity23()
+                            continue
+                        else:
+                            print("Invalid Command")
+                    else:
+                        print("Invalid Command")      
+        else:
+            print("Invalid Instruction")    
 main()
