@@ -345,20 +345,20 @@ def activity22():
     pass
 
 
-def activity23(number): #modules
-    """ This function's purpose is to compute/calculate the factorial of any number given """
+def activity23(number):  # Module to calculate factorial
+    """This function computes the factorial of any number given."""
     fact = 1
-    for x in range(number, 0, -1):
+    for x in range(number, 0, -1):  # Loop from the number down to 1
         fact *= x
+    return fact  # Return the factorial result
 
-    return fact
+# Call the function and print the result
+print(f"The factorial of 13 is {activity23(13)}")
 
-print(f"THe factorial of 13 is {activity23(13)}")
 
-
-def activity24(): #Dictionary
+def activity24(y): #Dictionary
     x = {"past":"Yesterday","present":"Today","future":"Tommorow"}
-    print(x["past"])
+    print(x[y])
 
 def activity25(): #list
 
@@ -637,17 +637,18 @@ def code_challenge13():  #for loop
 def code_challenge14():  #While Loop
     x = True
     a = 0
-    while x == True:
-        number = eval(input("Enter a number--->  "))
-        if number == "0":
-            print("Program Terminated")
-            print(f"The total of the number you enter is {a}")
-            break
-        elif number != "0":
-            a += number
-            continue
-        else:
-            break
+    while x:
+        try:
+            number = int(input("Enter a number ---> "))
+            if number == 0:
+                print("Program Terminated")
+                print(f"The total of the numbers you entered is {a}")
+                break
+            else:
+                a += number
+        except ValueError:
+            print("Invalid input. Please enter an integer.")
+
 
 def code_challenge15(): #Hybrid Loop
     import os
@@ -1189,6 +1190,10 @@ def main():
                             activity19()
                             continue
                         elif command == "2":
+                            print()
+                            print("<<< enter any number >>>")
+                            print("<<< enter number 0 to stop >>>")
+                            print()
                             code_challenge14()
                             continue
                         else:
@@ -1281,7 +1286,7 @@ def main():
                                 else:
                                     print("Invalid choice. Please try again.")
                         elif command == "2":
-                            activity21
+                            activity21()
                             continue
                         elif command == "3":
                             while True:
@@ -1382,7 +1387,13 @@ def main():
                     elif command != "0" or command != "exit":
                         os.system('cls')
                         if command == "1":
-                            activity24()
+                            print()
+                            print("|———————————————————————————————————|")
+                            print("|       past, present, future       |")
+                            print("|———————————————————————————————————|")
+                            print()
+                            y = input("Choose 1 from the box: ").strip()
+                            activity24(y)
                             continue
                         else:
                             print("Invalid Command")
