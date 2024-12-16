@@ -1,5 +1,6 @@
 user_data = {}
 accounts = {}
+import os
 #activity1
 def hello_world(y): #print
     print()
@@ -772,6 +773,9 @@ def main():
     while True:
         print()
         print("|————————————————————————————————————————————————————————————————————|")
+        print("|————————————————————————————————————————————————————————————————————|")
+        print("|                     <<<  MAIN DASHBOARD  >>>                       |")
+        print("|————————————————————————————————————————————————————————————————————|")
         print("|                 Louie's finals project on  ITCS102                 |")
         print("|————————————————————————————————————————————————————————————————————|")
         print("|   * This final project is breaked down lesson to lesson            |")
@@ -780,34 +784,36 @@ def main():
         print("|                                                                    |")
         print("|————————————————————————————————————————————————————————————————————|")
         print("||——————————————————————————————————————————————————————————————————||")
-        print("||<<INTRODUCTION TO PYTHON>>       ||       <<CONTROL STRUCTURES>>  ||")
-        print("||1. print/concatenation           ||       7. if/else statements   ||")
-        print("||2. data types and variables      ||       8. for loop             ||")
-        print("||3. arithmetic operators          ||       9. while loop           ||")
-        print("||4. assignment operators          ||       10. hybrid loop         ||")
-        print("||5. comparison operators          ||                               ||")
-        print("||6. logical operators             ||                               ||")
+        print("||<<INTRODUCTION TO PYTHON>>      ||       <<CONTROL STRUCTURES>>   ||")
+        print("||1. print/concatenation          ||       7. if/else statements    ||")
+        print("||2. data types and variables     ||       8. for loop              ||")
+        print("||3. arithmetic operators         ||       9. while loop            ||")
+        print("||4. assignment operators         ||       10. hybrid loop          ||")
+        print("||5. comparison operators         ||                                ||")
+        print("||6. logical operators            ||                                ||")
         print("||——————————————————————————————————————————————————————————————————||")
         print("||——————————————————————————————————————————————————————————————————||")
-        print("||<<FUNCTIONS>>                    ||                               ||")
-        print("||11. functions <the def()>        ||                               ||")
+        print("||<<FUNCTIONS>>                   ||                                ||")
+        print("||11. functions <the def()>       ||                                ||")
         print("||——————————————————————————————————————————————————————————————————||")
         print("||——————————————————————————————————————————————————————————————————||")        
-        print("||<<DATA STRUCTURES>>              ||                               ||")
-        print("||12. list                         ||                               ||")
-        print("||13. dictionaries                 ||                               ||")
-        print("||14. modules                      ||                               ||")
+        print("||<<DATA STRUCTURES>>             ||                                ||")
+        print("||12. list                        ||                                ||")
+        print("||13. dictionaries                ||                                ||")
+        print("||14. modules                     ||                                ||")
         print("||——————————————————————————————————————————————————————————————————||")
-        print("||15. or the word 'exit' to exterminate the programm                ||")
+        print("||0. or the word 'exit' to exterminate the programm                 ||")
         print("||——————————————————————————————————————————————————————————————————||")
         print("|————————————————————————————————————————————————————————————————————|")
         print()
         coms = input("Enter an instruction: ").strip()
-        if coms.lower() == "exit" or coms == "15":
+        if coms.lower() == "exit" or coms == "0":
             print("program terminated")
+            os.system('cls')
             break
-        elif coms.lower() != "exit" or coms != "15":
+        elif coms.lower() != "exit" or coms != "0":
             # 1. Introduction to python
+            os.system('cls')
             if coms.lower() == "1": # first done!
                 while True:
                     print()
@@ -827,8 +833,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             y = input("what's your name? : ")
                             hello_world(y)
@@ -872,8 +880,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity3()
                             continue
@@ -900,8 +910,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity4
                             continue
@@ -947,8 +959,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity6()
                             continue
@@ -978,8 +992,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity7()
                             continue
@@ -1015,8 +1031,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity9()
                             continue
@@ -1048,8 +1066,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity7()
                             continue
@@ -1092,8 +1112,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity11()
                             continue
@@ -1159,8 +1181,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity19()
                             continue
@@ -1191,8 +1215,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity20()
                             continue
@@ -1222,8 +1248,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                              while True:
                                 print("|————————————————————————————————————————————————————————————————————|")
@@ -1239,8 +1267,10 @@ def main():
                                 print("|————————————————————————————————————————————————————————————————————|")
                                 choice = input("Choose an option: ")
                                 if choice == "0":
+                                    os.system('cls')
                                     break
                                 elif choice != "0":
+                                    os.system('cls')
                                     
                                     if choice == "1":
                                         create_user()
@@ -1270,11 +1300,13 @@ def main():
                                 print("|————————————————————————————————————————————————————————————————————|")
                                 choice = input("Choose an option: ")
                                 if choice == "0":
+                                    os.system('cls')
                                     break
                                 elif choice != "0":
+                                    os.system('cls')
                                     
                                     if choice == "1":
-                                        create_user()
+                                        account()
                                         continue
                                     elif choice == "2":
                                         deposit()
@@ -1314,8 +1346,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity25()
                             continue
@@ -1343,8 +1377,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity24()
                             continue
@@ -1361,7 +1397,7 @@ def main():
                     print("|                        No.14 MODULES                               |")
                     print("|————————————————————————————————————————————————————————————————————|")
                     print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
-                    print("|   * COMMAND ( 1 ('1'))                                           |")
+                    print("|   * COMMAND ( 1 ('1'))                                             |")
                     print("|————————————————————————————————————————————————————————————————————|")
                     print("|————————————————————————————————————————————————————————————————————|")
                     print("||<< ACTIVITIES >>             ||       << CODE CHALLENGES >>       ||")
@@ -1374,8 +1410,10 @@ def main():
                     print("|————————————————————————————————————————————————————————————————————|")
                     command = input("Enter a command: ")
                     if command == "0" or command == "exit":
+                        os.system('cls')
                         break
                     elif command != "0" or command != "exit":
+                        os.system('cls')
                         if command == "1":
                             activity23()
                             continue
@@ -1386,3 +1424,7 @@ def main():
         else:
             print("Invalid Instruction")    
 main()
+###finally done!! 
+###time: 3:45am
+###date: Dec 17 2024
+###def-not louie
