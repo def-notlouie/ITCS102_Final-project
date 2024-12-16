@@ -1,13 +1,15 @@
 user_data = {}
 
-def hello_world(x):
+#activity1
+def hello_world(x): #print
+    print()
     print(f"hello {x}, do you know that printing 'hello world' in python is very common in programming")
     print("Hello world")
     print()
     print("**print()** is a built in function in python, just insert quotation marks inside the the parentheses("")")
 
 
-def activity2(x):
+def activity2(x): #variable concatenation
     
     y = input("enter your age : ")
     z = input("enter your hobby : ")
@@ -16,7 +18,7 @@ def activity2(x):
     print(f"hello my name is {x}, and I'm {y} years old. my favorite hobby is {z}, and the goal i root the most is {yy}")
     print()
 
-def activity3():
+def activity3(): # variable - concatenation
     # Collecting user information
     name = input("PLEASE INPUT YOUR NAME: ")
     nickname = input("PLEASE INPUT YOUR NICKNAME: ")
@@ -72,15 +74,33 @@ def activity3():
     I have developed skills in {skills}. Developing these skills will help me navigate complex situations, enhance my professional growth, and contribute more effectively to achieving my goals.
     """)
 
-
-def code_challenge():
-    x = eval(input("enter a number: "))
-    y = eval(input("enter a number: "))
-    z = x + y
-    print(f"the sum of {x} and {y} is {z}")
-    print()
-
 def activity4():
+    A = eval(input("Enter a number: "))
+    B = eval(input("Enter another number: "))
+
+    C = A + B
+    D = A - B
+    E = A * B
+    F = A / B
+    G = A ** B
+
+
+    print(f"The Sum of {A} and {B}, is {C}")
+    print(f"The Difference of {A} and {B}, is {D}")
+    print(f"The product of {A} and {B}, is {E}")
+    print(f"The Quotient of {A} and {B}, is {F}")
+    print(f"{A} Exponent by {B}, is {G}")
+
+
+
+
+def activity5(): #arithmetic operations
+    print()
+    x = float(input("Enter a temperature: "))
+    y = (x - 32)*5/9
+    print(f"The conversion  of degrees fahrenheit is {round(y,2)} degrees celcius")
+
+def activity6():
     x = 5
     print(x)
     x += 10
@@ -93,64 +113,27 @@ def activity4():
 
 
 
-
-
-def activity5():
-
-    for a in range (11, 0 , -1):
-        for b in range (11, a, -1):
-            print(" ",end="")
-        print("*" *a)
-
-def activity6():
-
-
-
-    for x in range (6,1,-1):
-        for a in range (x,1,-1):
-            print(" ", end=" ")
-        for b in range (x,7,1):
-            print("*",end=" ")
-        for c in range (x,6,1):
-            print("*", end=" ")
-        print()
-
-    for x in range (1,7):
-        for a in range (1,x,1):
-            print(" ", end=" ")
-        for b in range (7, x, -1):
-            print("*",end=" ")
-        for c in range (6, x, -1):
-            print("*", end=" ")
-        print()
-
-def activity7(accs):
-    A = {}
-
-    def accs(v):
-        v = input("enter user:")
-        if v in A:
-            print("this account is already exist")
-            
-        else:
-            A[v] = 0
-            print(f"the account was already created for {v}")
-            
-    # def acc_main(): 
-    #     while True:
-    #         print("type new for creation of account")
-    #         x = input("enter a command:")
-    #         if x == "new":
-    #             accs()           
-    # acc_main()
-
-    
-def activity8():
-    pass
     
 
-    
+def activity7():
+    AA =input("What's your name, Miner?: ")
+    print("\n")
+    A = 0
+    B = input("Have you mined today?: ")
+    print("\n")
 
+    if B.upper() == "YES":
+        C = eval(input(" How many golds have youe mined? :"))
+        print("\n")
+        D = A + C
+        print(f"Congrats, {AA}. you have mined {D} golds, today!")
+
+    elif B.upper() != "YES":
+        print("\n")
+        print(f"That's unfortunate, {AA}.you've mined {A} golds ")
+        print("unfortunatele you mined no golds today")
+    
+# def activity8(): 
 # Function to create a new user
 def create_user():
     username = input("Enter a username: ")
@@ -171,32 +154,26 @@ def login():
     else:
         print("Invalid username or password.")
 
-    # Menu loop
-    
-
-
-    # if password.lower() == "": 
-    #     print("Access Granted")
-    #     print("Enjoy using the system")
-    # elif password.lower() == "1004":
-    #     print("Welcome, Yoon Jeonghan")
-    #     print("Access Granted")
-    # else:
-    #     print("Incorrect password, Access Denied")
-    # print("Thank you!")
-
-    # x = int(input("enter a temperature"))
-    # if x <= 20:
-    #     print("it is cold ain't it?")
-    # elif x <= 25:
-    #     print("it's moderate temp")
-    # elif x <= 30:
-    #     print("it is hot today ain't it")
-    # elif x <= 35:
-    #     print("bro it's super hot, you're slowly cooking")
-    
 def activity9():
-    pass
+    A = eval(input("Enter Age ---------->"))
+
+    if A >= 1 and A<= 7:
+        print("toddler")
+    elif A >= 8 and A <= 13:
+        print("pre teen")
+    elif A >= 14 and A <= 18:
+        print("teenager")
+    elif A >= 19 and A <= 31:
+        print("early adulthood")
+    elif A >= 32 and A <= 45:
+        print("mid adulthood")
+    elif A >= 46 and A <= 59:
+        print("post adulthood")
+    elif A >= 60 and A <= 100:
+        print("senior")
+    elif A >= 100:
+        print("Ancient")
+    
 def activity10():
     name = input("Enter Your Name: ")
 
@@ -232,46 +209,210 @@ def activity10():
             print("Your form has been successfully submitted")
             print()
     
-def activity11():
+def activity11(): #for loop
     for x in range(1,5):
         print("input loop")
         name = input("Hi! Please input your name: ")
         print(f"Hi {name}")
 
     
-def activity12():
-    pass
+def activity12(): #for loop
+    for a in range(1,111):
+        print(f"Number. {a}")
+
 def activity13():
-    pass
-def activity14():
-    pass
-def activity15():
-    pass
-def activity16():
-    pass
-def activity17():
-    pass
-def activity18():
-    pass
-def activity19():
-    pass
-def activity20():
-    pass
-def activity21():
-    pass
+    sum = 1
+    num=int(input('Enter a number: '))
+
+    for x in range (num,0,-1):
+        sum *= x
+    print(f"The factorial of {num} is {sum}")
+
+
+def activity14(): #for loop
+    for x in range(0,11):
+        print(x,end="")
+        for y in range(0,11):
+            print(" * ",end="")
+        print()
+    
+def activity15(): #for loop
+    for x in range(1,11,1):
+        print(end="")
+
+        for y in range(x,11,1):
+            print(end=" ")
+        print("* " * x)
+
+        for b in range(11,x,-1):
+            print(end=" ")
+        print("* " * x)
+
+    
+def activity16(): #for loop
+    t = int(input("Enter a number range: "))
+    for x in range(1,t):
+
+        for a in range(1,x,1):
+            print(" ",end="  ")
+
+        for b in range(t,x,-1):
+            print("* ",end=" ")
+    
+def activity17(): #for loop
+    A = int(input("Enter a Value: "))
+    for x in range(1,11):
+        for y in range(1,A+1):
+            print(f"{x} x {y} = {x*y}",end=" \t")
+        print() 
+
+    
+def activity18(): #for loop
+    A = int(input("Enter a value: "))
+    for x in range(1,6):
+        for r in range(1,A+1):
+            for y in range(1,x+1):
+                print("*",end=" ")
+            for z in range(x,6):
+                print(" ",end=" ")
+
+   
+def activity19(): #while loop
+    tama = True
+
+    while tama == True:
+        ask = input("Enter your name: ")
+        if ask.lower() == "stop":
+            break
+            ask == False
+    
+def activity20():  #Hybrid loop
+    import os
+    tama = True
+    no = 0
+    while tama == True:
+        ask = input("Would you like to continue? (yes/no): ")
+        if ask.lower() == "no":
+            print("Program Terminated")
+            break
+            ask == False
+        else:
+            os.system('cls')
+            for x in range(1,6):
+                no += 1
+                for r in range (1,no+1):
+                    for y in range(1,x+1):
+                        print("*",end=" ")
+                    for z in range(5,x,-1):
+                        print(" ",end= " ")
+                print()
+            continue        
+
+
+#Activity 21 whole structure
+def pang_hi():
+    print("HI IT1C")
+
+def pang_hi_v2(name):
+    print(f"Hello {name}")
+
+def termi():
+    print("PROGRAM TERMINATED")
+
+def activity_2():
+    number1 = eval (input("enter a number--->" ))
+    number2 = eval (input("enter another number--->" ))
+    answer = (number1 + number2)
+    print(f"The sum of {number1} and {number2} is {answer}")
+
+def activity21(): # functions
+    tuloy =  True
+    while tuloy == True:
+        ask = input("Enter a name---> ")
+
+        if ask.lower() != "stop":
+            pang_hi_v2(ask)
+            if ask == "2":
+                activity_2()
+                continue
+        else:
+            termi()
+            break
+
 def activity22():
+
     pass
-def activity23():
-    pass
+
+
+def activity23(number): #modules
+    """ This function's purpose is to compute/calculate the factorial of any number given """
+    fact = 1
+    for x in range(number, 0, -1):
+        fact *= x
+
+    return fact
+
+print(f"THe factorial of 13 is {activity23(13)}")
+
+
 def activity24():
+
     pass
 def activity25():
-    pass
+
+    courses = ["BSIT", "BSA", "BSAIS", "BTVTED", "BSSW", "BSPA", "Delete w/o index", "Delete with index"]
+
+    courses.remove("Delete w/o index")
+    courses.pop()
+    courses.append("DHRS")
+    courses.insert(0, "ABELS")
+
+    print(courses)
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++END OF ACTIVITIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++START OF CODE_CHALLENGES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 def bato_bato_pick():
     x = input("enter a guess: ")
-def code_challenge1():
+
+def code_challenge1(): #print/Concatenation
     print("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t***\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t*****\n\n\t\t\t\t\t\t\t\t\t\t\t\t*******\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t*****\t\t\t\t\t\t\t\t\t\t\t\t\t\t***\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*")
-def code_challenge5(P):
+
+def code_challenge2(): #print/Concatenation
+    print()
+    name = input("Please insert your name >")
+    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t*\n\n\t\t\t\t\t\t\t\t\t\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\t\t\t\t\t\t\t\t\t\t_________________\n\t\t\t\t\t\t\t\t*\t*\t|\t\b\b" + name + "\t|\t*\t*\n\t\t\t\t\t\t\t\t\t\t-----------------\n\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t\t*\t*\t*\n\n\t\t\t\t\t\t\t\t\t\t\t*\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+def code_challenge3(): #arithmetic operators
+    x = eval(input("enter a number: "))
+    y = eval(input("enter a number: "))
+    z = x + y
+    print(f"the sum of {x} and {y} is {z}")
+    print()
+
+def code_challenge4(): #variables/concatenation and arithmetic operators
+    A = eval(input("Enter a number: "))
+    B = eval(input("Enter another number: "))
+
+    C = A + B
+    D = A - B
+    E = A * B
+    F = A / B
+    G = A ** B
+    H = A % B
+    I = A // B
+
+    print(f"The Sum of {A} and {B}, is {C}")
+    print(f"The Difference of {A} and {B}, is {D}")
+    print(f"The product of {A} and {B}, is {E}")
+    print(f"The Quotient of {A} and {B}, is {F}")
+    print(f"{A} Exponent by {B}, is {G}")
+    print(f"The Reminder of {A} and {B},is {H}")
+    print(f"The Floor Division of {A} and {B}, is {I}")
+
+
+def code_challenge5(P): #assignment operators
     
     print()
     A = P//1000
@@ -314,7 +455,7 @@ def code_challenge5(P):
     print("1------",I)
     print()    
 
-def code_challenge6():
+def code_challenge6():  #comparison operators/if-elif-else structure
     n = input("Enter Your Name---------> ")
     print()
     A = float(input("Enter Your Prelim Grade ------> "))
@@ -341,7 +482,7 @@ def code_challenge6():
     else :
         print("Unfortunately You din't meet the requirements",n," better luck nextime!")
 
-def code_challenge8():
+def code_challenge7():
     # Grocery Purchase Program
 
     A = input("DID YOU BUY A GROCERY GOOD/s (yes/no)? ").strip().lower()
@@ -372,9 +513,9 @@ def code_challenge8():
         print(f"12.3% tax added: PHP {tax_amount:.2f}")
         if D >= 60:
             print(f"Senior discount (5.2%): PHP {discount_amount:.2f}")
-        print(f"Total amount: PHP {final_price:.2f}")
-        print(f"Amount given: PHP {E:.2f}")
-        print(f"Change: PHP {change:.2f}")
+            print(f"Total amount: PHP {final_price:.2f}")
+            print(f"Amount given: PHP {E:.2f}")
+            print(f"Change: PHP {change:.2f}")
 
         # Ask to print the receipt
         rt = input("Do you want us to print your receipt? (yes/no): ").strip().lower()
@@ -393,14 +534,105 @@ def code_challenge8():
             print("Thank you for your purchase, customer!")
     else:
         print("Thank you for stopping by!")
+def code_challenge8():
+    sum = 0
+    odd = 0
+    even = 0
 
-def code_challenge9():
+    for j in range(1,11):
+        num = int(input(f"\nEnter a Number {j}:  "))
+        sum += num 
+        if num % 2 == 0:
+            odd+=num
+        else:
+            even+=num
+
+print(f"\nThe sum of all given numbers is {sum}")
+print(f"\nThe even of all given numbers is {even}")
+print(f"\nThe odd of all given numbers is {odd}")
+
+
+def code_challenge9(): #for loop
     for x in range(10,0,-1):
         for y in range(10,x,-1):
             print(" ",end=" ")
         print("* "* x)
 
-def code_challenge14():
+def code_challenge10():  #for loop
+    for x in range (6, 1, -1):
+        for y in range(x, 1, - 1):
+            print(" ", end =" ")
+        for z in range(x, 7, 1):
+            print("*",end=" ")
+        for j in range (x, 6, 1):
+            print("^",end=" ")
+        print()
+            
+    for x in range (1,7):
+        for y in range(1, x, 1):
+            print(" ", end =" ")
+        for z in range(7, x, -1):
+            print("^",end=" ")
+        for j in range (6, x, -1):
+            print("*",end=" ")
+        print()
+
+def code_challenge11():  #for loop
+    for x in range (7, 1, -1):
+        for y in range(1, x + 1):
+            print(" ", end =" ")
+        for z in range(7, x,- 1):
+            print("*",end=" ")
+        for j in range (5, x ,- 1):
+            print("*",end=" ")
+        print()
+            
+    for x in range (1,7):
+        for y in range(1, x + 1):
+            print(" ", end =" ")
+        for z in range(4, x, -1):
+            print("*",end=" ")
+        for j in range (6, x, -1):
+            print("*",end=" ")
+        print() 
+
+def code_challenge12():  #for loop
+    for j in range(6,1-1):
+        for v in range(1,j):
+            print(" ",end=" ")
+        for q in range(7,j -1):
+            print("*",end=" ")
+        for q in range(6,j -1):
+            print("*",end=" ")
+        print()
+
+    for t in range(1,7):
+        for p in range(1,5):
+            print(" ",end=" ")
+        for s in range(1,4):
+            print("*",end=" ")
+        print() 
+
+def code_challenge13():  #for loop
+    for x in range (6, 1, -1):
+        for y in range(x, 1, - 1):
+            print(" ", end =" ")
+        for z in range(x, 7, +1):
+            print(z,end=" ")
+        for j in range (x, 6, 1):
+            print(j,end=" ")
+        print()
+            
+    for x in range (1,7):
+        for y in range(1, x, 1):
+            print(" ", end =" ")
+        for z in range(7, x, -1):
+            print(z,end=" ")
+        for j in range (x, 6, +1):
+            print(j,end=" ")
+        print()
+
+def code_challenge14():  #While Loop
     x = True
     a = 0
     while x == True:
@@ -413,7 +645,7 @@ def code_challenge14():
             a += number
             continue
 
-def code_challenge15():
+def code_challenge15(): #Hybrid Loop
     import os
 
     isContinue = True
@@ -438,6 +670,7 @@ def code_challenge15():
         else:
             print("INVALID ANSWER it's only (yes/no)")
             continue
+
 
 ##code_challenge16():
 def denomination(amount):
@@ -536,12 +769,12 @@ def main():
     while True:
         print()
         print("|————————————————————————————————————————————————————————————————————|")
-        print("                 Louie's finals project on  ITCS102                  ")
-        print()
-        print(" This final project is breaked down lesson to lesson")
-        print(" TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW ")
-        print(" COMMAND (1-15)")
-        print("")
+        print("|                 Louie's finals project on  ITCS102                 |")
+        print("|————————————————————————————————————————————————————————————————————|")
+        print("|   * This final project is breaked down lesson to lesson            |")
+        print("|   * TYPE THE NUMBER OF ANY LESSON YOU WANT TO VIEW                 |")
+        print("|   * COMMAND (1-15)                                                 |")
+        print("|                                                                    |")
         print("|————————————————————————————————————————————————————————————————————|")
         print("||——————————————————————————————————————————————————————————————————||")
         print("||<<INTRODUCTION TO PYTHON>>       ||       <<CONTROL STRUCTURES>>  ||")
@@ -566,11 +799,12 @@ def main():
         print("||——————————————————————————————————————————————————————————————————||")
         print("|————————————————————————————————————————————————————————————————————|")
         print()
-        coms = input("Enter an instruction: ")
-        if coms.lower() == "exit" or "15":
+        coms = input("Enter an instruction: ").strip()
+        if coms.lower() == "exit" or coms == "15":
             print("program terminated")
             break
         else:
+            # 1. Introduction to python
             if coms.lower() == "1":
                 x = input("what's you're name?------>")
                 hello_world(x)
@@ -594,6 +828,9 @@ def main():
                 activity6()
                 print("program executed")
                 continue
+            
+            
+            # 2.Control Structures
             elif coms.lower() == "bank":
                 activity7()
                 print("programm terminated")
@@ -622,12 +859,24 @@ def main():
             elif coms.lower() == "cat10":
                 activity10()
                 continue
+            #3. Functions
             elif coms.lower() == "cat11":
                 code_challenge1()
                 continue
+
+            
             elif coms.lower() == "3":
                 name = input("What's your name? -------->")
                 P = float(input("The amount of your deposit----->"))
                 code_challenge5(P)
-                continue       
+                continue
+
+
+            ##DATA STRUCTURES
+            elif coms.lower() == "12":
+                pass
+            elif coms.lower() == "13":
+                pass
+            elif coms.lower() == "14":
+                pass       
 main()
