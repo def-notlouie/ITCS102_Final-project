@@ -1,6 +1,42 @@
 user_data = {}
 accounts = {}
 import os
+import time
+import sys
+
+print()
+# fetch files load animation
+def fetch(duration):
+    loading_chars = ['|', '/', '-', '\\']  # Frames of the animation
+    start_time = time.time()
+    x = "louie's"
+    while (time.time() - start_time) < duration:
+        for char in loading_chars:
+            sys.stdout.write(f'\rFetching {x} files........ {char}')  # Print on the same line as trans m
+            sys.stdout.flush()  # Force the output to update
+            time.sleep(0.2)  # Pause for a short duration
+    print(f"\rFetching {x} files........ Done!    ")  # trans mesage
+    time.sleep(1.5)
+    os.system('cls')
+fetch(4)  #  5 seconds call
+
+# load prog
+def bar(duration, bar_length=100):
+    for i in range(bar_length + 1):  
+        percent = (i / bar_length) * 100
+        bar = '█' * i + '-' * (bar_length - i)  # progress bar
+        sys.stdout.write(f'\rLoading: [{bar}] {percent:.0f}%')  # Print progress
+        sys.stdout.flush()  # Update terminal output
+        time.sleep(duration / bar_length)  # Adjust speed based on duration
+    print("\nLoading Complete!")  # Final message after loading completes
+    time.sleep(1.2)
+    os.system("cls")
+    print()
+    print(" I'm Markie Louie Catungal, BSIT - 1C")
+    print(" Welcome To My Finals Project")
+bar(3)  # 4 seconds call
+print()
+
 #activity1
 def hello_world(y): #print
     print()
@@ -353,7 +389,7 @@ def activity23(number):  # Module to calculate factorial
     return fact  # Return the factorial result
 
 # Call the function and print the result
-print(f"The factorial of 13 is {activity23(13)}")
+   
 
 
 def activity24(y): #Dictionary
@@ -809,12 +845,31 @@ def main():
         print()
         coms = input("Enter an instruction: ").strip()
         if coms.lower() == "exit" or coms == "0":
+            os.system("cls")
             print("program terminated")
+            time.sleep(1.3)
+            print()
+            print("Thank You For Navigating Through My Programm")
+            print()
+            print("                      — Markie Louie Catugal")
+            time.sleep(2.5)
             os.system('cls')
             break
         elif coms.lower() != "exit" or coms != "0":
-            # 1. Introduction to python
+            # 1. Introduction to python lessons from dashboard
             os.system('cls')
+            def spinning_dots(duration):
+                spinner = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
+                start_time = time.time()
+                while (time.time() - start_time) < duration:
+                    for char in spinner:
+                        sys.stdout.write(f'\rLoading     {char}')  # Prints spinning dots
+                        sys.stdout.flush()
+                        time.sleep(0.1)
+                print("\rLoading Complete! ")
+                time.sleep(1)
+                os.system("cls")
+            spinning_dots(1)
             if coms.lower() == "1": # first done!
                 while True:
                     print()
@@ -1187,6 +1242,8 @@ def main():
                     elif command != "0" or command != "exit":
                         os.system('cls')
                         if command == "1":
+                            print("enter the word 'stop' to terminate the program")
+                            print()
                             activity19()
                             continue
                         elif command == "2":
@@ -1426,7 +1483,9 @@ def main():
                     elif command != "0" or command != "exit":
                         os.system('cls')
                         if command == "1":
-                            activity23()
+                            number = eval(input("Enter a number : "))
+                            activity23(number)
+                            print(f"The factorial of {number} is {activity23(number)}")
                             continue
                         else:
                             print("Invalid Command")
@@ -1435,7 +1494,24 @@ def main():
         else:
             print("Invalid Instruction")    
 main()
-###finally done!! 
-###time: 3:45am
-###date: Dec 17 2024
-###def-not louie
+
+### <<< UPDATES >>> ###
+
+    ###finally done!! 
+    ###time: 3:45am
+    ###date: Dec 17 2024
+    ###def-not louie
+
+        ### new update
+        ### 5am
+
+        ### new update
+        ### 6:oopm
+        ### Dec 17 2024
+
+
+### <<< ABOUTS >>> ###
+
+    ### NAME OF STUDENT      : MARKIE LOUIE SOTELO CATUNGAL
+    ### GRADE AND SECTION    : BSIT - 1C
+    ### PROJECT DETAILS      : FINALS PROJECT COMPILATION OF 25 ACTIVITIES AND 16 CODE CHALLENGES for ITCS102
