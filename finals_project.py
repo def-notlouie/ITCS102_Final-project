@@ -18,6 +18,7 @@ def fetch(duration):
     print(f"\rFetching {x} files........ Done!    ")  # trans mesage
     time.sleep(1.5)
     os.system('cls')
+    
 fetch(4)  #  5 seconds call
 
 # load prog
@@ -835,12 +836,13 @@ def main():
         print("||11. functions <the def()>       ||                                ||")
         print("||——————————————————————————————————————————————————————————————————||")
         print("||——————————————————————————————————————————————————————————————————||")        
-        print("||<<DATA STRUCTURES>>             ||                                ||")
-        print("||12. list                        ||                                ||")
-        print("||13. dictionaries                ||                                ||")
-        print("||14. modules                     ||                                ||")
+        print("||<<DATA STRUCTURES>>             ||        <<OTHERS>>              ||")
+        print("||12. list                        ||    15. Programmers details     ||")
+        print("||13. dictionaries                ||    16. List Of All Activities  ||")
+        print("||14. modules                     ||        and Code_Challenges     ||")
+        print("||                                ||                                ||")
         print("||——————————————————————————————————————————————————————————————————||")
-        print("||0. or the word 'exit' to exterminate the programm                 ||")
+        print("|| 0. or the word 'exit' to exterminate the programm                ||")
         print("||——————————————————————————————————————————————————————————————————||")
         print("|————————————————————————————————————————————————————————————————————|")
         print()
@@ -1491,7 +1493,123 @@ def main():
                         else:
                             print("Invalid Command")
                     else:
-                        print("Invalid Command")      
+                        print("Invalid Command")
+            ##<<OTHERS                  
+            elif coms.lower() == "15":
+                while True:               
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                    No.15 PROGRAMMER'S DETAILS                      |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|   NAME       :  Markie Louie S. Catungal                           |")
+                    print("|   COURSE     :  Bachelor of Science in Information Technology      |")
+                    print("|   SECTION YR :  1C                                                 |")
+                    print("|   STUD ID    :  024A - 12698                                       |")
+                    print("|                                                                    |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||  0. to back/exit                                                  ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        os.system('cls')
+                        break
+                    else:
+                        os.system('cls')
+                        print("Invalid Command")
+            elif coms.lower() == "16":
+                while True:
+                    print()
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|                  No.16 list of ACTS and CCs                        |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|    1. Activities(25)                                               |")
+                    print("|    2. Code_Challenges(16)                                          |")
+                    print("|                                                                    |")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    print("||  0. to back/exit                                                  ||")
+                    print("|————————————————————————————————————————————————————————————————————|")
+                    command = input("Enter a command: ")
+                    if command == "0" or command == "exit":
+                        os.system('cls')
+                        break
+                    elif command != "0" or command != "exit":
+                        os.system('cls')
+                        if command == "1":
+                            while True:
+                                print()
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|                  No.1 list of ACTIVITIES(25)                       |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|    1. Activity1.py             16.  Activity16.py                  |")
+                                print("|    2. Activity2.py             17.  Activity17.py                  |")
+                                print("|    3. Activity3.py             18.  Activity18.py                  |")
+                                print("|    4. Activity4.py             19.  Activity19.py                  |")
+                                print("|    5. Activity5.py             21.  Activity21.py                  |")
+                                print("|    6. Activity6.py             22.  Activity22.py                  |")
+                                print("|    7. Activity7.py             23.  Activity23.py                  |")
+                                print("|    8. Activity8.py             25.  Activity25.py                  |")
+                                print("|    9. Activity9.py                                                 |")
+                                print("|    10. Activity10.py                                               |")
+                                print("|    11. Activity11.py                                               |")
+                                print("|    12. Activity12.py                                               |")
+                                print("|    13. Activity13.py                                               |")
+                                print("|    14. Activity14.py                                               |")
+                                print("|    15. Activity15.py                                               |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|   PS: THIS IS ONLY A LIST OF ACTIVITIES NO COMMAND OTHER THAN '0'  |")        
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("||  0. to back/exit                                                 ||")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                choice = input("ENTER '0' TO GO BACK : ")
+                                if choice == "0":
+                                    os.system('cls')
+                                    break
+                                else:
+                                    os.system('cls')
+                                    print("ENTER '0' to GO BACK!")
+                                
+                        elif command == "2":
+                            while True:
+                                print()
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|                No.2 list of CODE_CHALLENGES(16)                    |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("|    1. Code_Challenge1.py                                           |")
+                                print("|    2. Code_Challenge2.py                                           |")
+                                print("|    3. Code_Challenge3.py                                           |")
+                                print("|    4. Code_Challenge4.py                                           |")
+                                print("|    5. Code_Challenge5.py                                           |")
+                                print("|    6. Code_Challenge6.py                                           |")
+                                print("|    7. Code_Challenge7.py                                           |")
+                                print("|    8. Code_Challenge8.py                                           |")
+                                print("|    9. Code_Challenge9.py                                           |")
+                                print("|    10. Code_Challenge10.py                                         |")
+                                print("|    11. Code_Challenge11.py                                         |")
+                                print("|    12. Code_Challenge12.py                                         |")
+                                print("|    13. Code_Challenge13.py                                         |")
+                                print("|    14. Code_Challenge14.py                                         |")
+                                print("|    15. Code_Challenge15.py                                         |")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("| PS: THIS IS ONLY A LIST OF Code_Challenge NO COMMAND OTHER THAN '0'|")        
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                print("||  0. to back/exit                                                 ||")
+                                print("|————————————————————————————————————————————————————————————————————|")
+                                
+                                choice = input("ENTER '0' TO GO BACK : ")
+                                if choice == "0":
+                                    os.system('cls')
+                                    break
+                                else:
+                                    os.system('cls')
+                                    print("ENTER '0' to GO BACK!")
+                        else:
+                            print("INVALID COMMAND, CHOOSE FROM THE LIST(1-2)")            
+                    else:
+                        print("Invalid Command!") 
+            else:
+                print("Invalid Command. Choose from the numbers from the dashboard")               
         else:
             print("Invalid Instruction")    
 main()
@@ -1516,3 +1634,367 @@ main()
     ### NAME OF STUDENT      : MARKIE LOUIE SOTELO CATUNGAL
     ### GRADE AND SECTION    : BSIT - 1C
     ### PROJECT DETAILS      : FINALS PROJECT COMPILATION OF 25 ACTIVITIES AND 16 CODE CHALLENGES for ITCS102
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### BY: LOUIE CATUNGAL ###
